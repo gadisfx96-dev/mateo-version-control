@@ -10,6 +10,7 @@ from
 select
 avg(wind_speed_10m) wind_speed,
 avg(temperature_2m) temperature,
+avg(relative_humidity_2m) humidity,
 time,
 CASE
   WHEN relative_humidity_2m >= 85
