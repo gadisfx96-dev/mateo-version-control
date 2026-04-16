@@ -6,7 +6,7 @@ WITH hourly_stg AS (
 )
 
 SELECT 
-    time,
+time,
     wind_speed_10m,
     temperature_2m,
     relative_humidity_2m,

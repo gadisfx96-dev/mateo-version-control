@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: mateo-analytics
+    schema: raw
+    tables:
+      - name: current_raw
+      - name: hourly_raw

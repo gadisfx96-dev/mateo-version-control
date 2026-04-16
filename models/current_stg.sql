@@ -1,11 +1,7 @@
 {{ config(materialized='table') }}
-models:
-  mateo-analytics:
-    +dataset: models
-    +materialized: table
 
-    
-WITH cur AS (
+with cur AS
+(
     SELECT *
     FROM raw.current_raw
 )
