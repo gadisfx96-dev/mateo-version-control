@@ -18,5 +18,9 @@ clean-targets:
 
 models:
   mateo-analytics:
-    +dataset: models
+    +dataset: marts
     +materialized: table
+    marts:
+      +materialized: table
+
+

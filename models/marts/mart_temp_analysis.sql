@@ -1,9 +1,10 @@
+{{config(materialized='table')}}
+
 with x as(select *
 from {{source('raw','weather_hourly')}}
 )
 select 
-date(parse_timestamp('%Y-%m-%dT%H:%M', time)) as date,
-avg(temperature_2m) temperature,
-avg(apparent_temperature) apparent_temp 
+time,
+temperature_2m,
+apparent_temperature
 from x
-group by date
