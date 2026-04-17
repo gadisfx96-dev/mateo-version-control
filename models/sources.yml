@@ -6,4 +6,6 @@ sources:
     schema: raw
     tables:
       - name: current_raw
-      - name: hourly_raw
+      - name: weather_hourly
+
+      - name: weather_current

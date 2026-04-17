@@ -2,13 +2,13 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: mart_weather_trend_analysis
+      description: " "
       columns:
-          - name: id
+          - name: wind_speed
             description: "The primary key for this table"
             tests:
-                - unique
+                
                 - not_null
 
     - name: my_second_dbt_model
